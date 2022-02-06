@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <link rel="stylesheet" href="css-photo-formulaire.css">
+    <title>Contactez-moi</title>
+</head>
+<body>
+    <header>
+        <div class="container-1"></div>
+            <div class="header-navbar">
+                <div class="header-navbar-logo">
+                    <img src="./images/logo-photographe.jpg" alt="">
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-bars ouvrir"></i>
+                    <i class="fas fa-times fermer"></i>
+                </div>
+                <div class="header-navbar-menu">
+                    <a href="html-photographe.html" class="menu-link"><i class="fas fa-home"></i> Accueil</a>
+                    <a href="page-galeries.html" class="menu-link"><i class="far fa-images"></i> Galerie</a>
+                    <a href="#" class="menu-link"><i class="fas fa-handshake"></i> Tarifs</a>
+                    <a href="page-contact.html" class="menu-link-1"><i class="fas fa-phone"></i> Contact</a>
+                </div>
+            </div>
+    </header>
+    <h2>Formulaire de contact</h2>
+    <div class="container">
+            <form class="row g-3 needs-validation" id="lessonForm" novalidate>
+                <div class="col-md-6">
+                    <label for="firstname" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre prénom.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname" class="form-label">Nom</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre nom.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre e-mail.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">Téléphone</label>
+                    <input type="email" class="form-control" name="phoneNumber" id="phoneNumber">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre numéro de téléphone.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="address" class="form-label">Adresse</label>
+                    <input type="email" class="form-control" name="address" id="address">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre adresse.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="project" class="form-label">Evenement</label>
+                    <select class="form-select" name="city" id="city">
+                        <option selected disabled value="">Choisir votre séance ...</option>
+                        <option>Mariage</option>
+                        <option>Grossesse</option>
+                        <option>Naissance</option>
+                        <option>Famille</option>
+                        <option>Baptême</option>                       
+                    </select>
+                    <div class="invalid-feedback">
+                        Veuillez choisir une ville.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="postcode" class="form-label">Code postal</label>
+                    <input type="text" class="form-control" name="postCode" id="postCode">
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre code postal.
+                    </div>
+                </div>
+    <div class="col-12">
+        <div class="mb-3 form-check">
+            <label class="form-check-label" for="conditions">J'accepte les conditions</label>
+            <input type="checkbox" class="form-check-input" id="conditions" name="conditions">
+            <div class="invalid-feedback">
+                            Merci de lire les conditions avant de valider le formulaire.
+            </div>
+        </div>
+    </div>
+        <button type="submit" class="btn btn-primary w-25">Valider</button>
+            </form>
+        </div>
+        <script src="site-photo-java.js"></script>
+</body>
+</html>
