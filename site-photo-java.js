@@ -6,6 +6,18 @@ toggle.addEventListener('click', function() {
 })
 
 
+
+const navigation = document.querySelector('medias')
+
+    window.addEventListener('scroll', () => {
+
+        if(window.scrollY > 30){
+            navigation.classList.add('anim-medias');
+        } else {
+            navigation.classList.remove('anim-medias');
+        }
+    })
+
     //=============== START - DECLARATION DU FORMULAIRE ===============//    
 
     (function()
