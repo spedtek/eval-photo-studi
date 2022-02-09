@@ -1,3 +1,5 @@
+//=============== Animation Menu hamburger ===============//   
+
 let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
 
@@ -5,20 +7,31 @@ toggle.addEventListener('click', function() {
     body.classList.toggle('open');
 })
 
+ //=============== Apparition header ===============//    
 
+const titreSpans = document.querySelectorAll('h1 span');
+const btns = document.querySelectorAll('.header-btn');
+const liens = document.querySelectorAll('.menu-link');
+const page = document.querySelectorAll('.menu-link-1');
+const logo = document.querySelector('.logo-site');
+const medias = document.querySelectorAll('.bulle');
 
-const navigation = document.querySelector('medias')
+window.addEventListener('load', () => {
 
-    window.addEventListener('scroll', () => {
+    const TL = gsap.timeline({paused: true});
 
-        if(window.scrollY > 30){
-            navigation.classList.add('anim-medias');
-        } else {
-            navigation.classList.remove('anim-medias');
-        }
-    })
+    TL
+    .staggerFrom(titreSpans, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.5)
+    .staggerFrom(page, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.1, '-=1')
+    .staggerFrom(liens, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3, '-=1')
+    .staggerFrom(btns, 1, {opacity: 0, ease: "power2.out"}, 0.5, '-=1')
+    .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.5, '-=1')
+    .from(logo, 0.4, {transform: "scale(0)", ease: "power2.out"}, 0.5, '-=1');
 
-    //=============== START - DECLARATION DU FORMULAIRE ===============//    
+    TL.play();
+})
+
+    //=============== DECLARATION DU FORMULAIRE ===============//    
 
     (function()
     {

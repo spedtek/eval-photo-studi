@@ -7,10 +7,15 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
+/*-------------------PAGE ACCUEIL-----------------*/
+
+
 body{
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
+
 /*--HEADER--*/
 .header{
     height: 100vh;
@@ -37,7 +42,7 @@ body{
     align-items: center;
     background-color : #FFFFFF80;
 }
-.header-navbar-logo img{
+.logo img{
     width: 110px;
     height: 100px;
     object-fit: cover;
