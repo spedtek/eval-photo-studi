@@ -470,6 +470,13 @@ body{
     border: 3px solid #4281A4;
     font-weight: 600;
 }
+.button:hover{
+    transform: translateX(40px);
+}
+.btn:hover{
+    background-color: #fff;
+    
+}
 
 /*--NEWSLETTER--*/
 .newsletter{
@@ -549,6 +556,11 @@ body{
 .client-1{
     border: 3px solid #E6B89C;
 }
+.client-1:hover{
+    background: #4281A4;
+    color: #fff;
+    transform: translateY(-20px);
+}
 .client-1 img{
     background-position: center;
     border-radius: 40%;
@@ -557,6 +569,11 @@ body{
 }
 .client-2{
     border: 3px solid #E6B89C;
+}
+.client-2:hover{
+    background: #4281A4;
+    color: #fff;
+    transform: translateY(-20px);
 }
 .client-2 img{
     background-position: center;
@@ -567,14 +584,29 @@ body{
 .client-3{
     border: 3px solid #E6B89C;
 }
+.client-1:hover{
+    background: #4281A4;
+    color: #fff;
+    transform: translateY(-20px);
+}
 .client-3 img{
     background-position: center;
     border-radius: 40%;
     height: 100px;
     width: 200px;
 }
+.client-3:hover{
+    background: #4281A4;
+    color: #fff;
+    transform: translateY(-20px);
+}
 .client-4{
     border: 3px solid #E6B89C;
+}
+.client-4:hover{
+    background: #4281A4;
+    color: #fff;
+    transform: translateY(-20px);
 }
 .client-4 img{
     background-position: center;
@@ -585,6 +617,8 @@ body{
 .client-items{
     font-size: 2em;
 }
+
+
 /*--FOOTER--*/
 footer{
     background-color: #4281A4;

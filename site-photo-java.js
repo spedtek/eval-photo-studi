@@ -30,38 +30,50 @@ window.addEventListener('load', () => {
 
     TL.play();
 })
+//============bouton==========//
 
-    //=============== DECLARATION DU FORMULAIRE ===============//    
+//=============== Déclaration Formulaire ===============//    
 
-    (function()
-    {
+document.getElementById("Formulaire").addEventListener("submit", function(e) {
 
-        'use strict'
+    var erreur;
+    var Prenom = document.getElementById("firstName");
+    var Nom = document.getElementById("lastName");
+    var Email = document.getElementById("email");
+    var Telephone = document.getElementById("phoneNumber");
+    var Projet = document.getElementById("projet");
+    var CodePostale = document.getElementById("postCode");
+    var Check = document.getElementById("conditions");
 
-        let form = document.getElementById('lessonForm');
 
-        form.addEventListener('submit', function(event) 
-        {
-
-             Array.from(form.elements).forEach((input) => 
-            {
-                if (input.type !== "submit") 
-                {
-                    if (!validateFields(input)) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                        input.classList.remove("is-valid");
-                        input.classList.add("is-invalid");
-                        input.nextElementSibling.style.display = 'block';
-                    } 
-                    else 
-                    {
-                        input.nextElementSibling.style.display = 'none';
-                        input.classList.remove("is-invalid");
-                        input.classList.add("is-valid");
-                    }
-                }
-            });
-        }, false)
-    })()
-    //=============== END - DECLARATION DU FORMULAIRE ===============//
+ 
+    if (!postCode.value) {
+        erreur = "Veuillez renseigner un code postale";
+    }
+    if (!projet.value) {
+        erreur = "Veuillez renseigner un projet";
+    }
+    if (!phoneNumber.value) {
+        erreur = "Veuillez renseigner un numéro de téléphone";
+    }
+    if (!email.value) {
+        erreur = "Veuillez renseigner un email";
+    }
+    if (!lastName.value) {
+        erreur = "Veuillez renseigner un nom";
+    }
+    if (!firstName.value) {
+        erreur = "Veuillez renseigner un prénom";
+    }
+    if (!conditions.value) {
+        erreur = "Veuillez accepter les conditions";
+    }
+    if (erreur){
+        e.preventDefault();
+        document.getElementById("erreur").innerHTML = erreur;
+        return false;
+    } else {
+        alert('Formulaire envoyé !');
+    }
+      
+}); 
