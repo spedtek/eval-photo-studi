@@ -31,6 +31,25 @@ window.addEventListener('load', () => {
     TL.play();
 })
 //============bouton==========//
+const parentContainer =  document.querySelector('.read-more-container');
+
+parentContainer.addEventListener('click', event=>{
+
+    const current = event.target;
+
+    const isReadMoreBtn = current.className.includes('read-more-btn');
+
+    if(!isReadMoreBtn) return;
+
+    const currentText = event.target.parentNode.querySelector('.mariage-grid-plus');
+
+    currentText.classList.toggle('mariage-grid-plus--show');
+
+    current.textContent = current.textContent.includes('Voir Plus') ? "Voir plus de photos..." : "Voir moins de photos..." ;
+
+})
+
+
 
 //=============== Déclaration Formulaire ===============//    
 
