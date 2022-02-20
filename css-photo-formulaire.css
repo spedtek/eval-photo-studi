@@ -256,3 +256,13 @@ h2 {
     justify-content: center;
 }
 
+@media all and (max-width: 600px) {
+    form{
+        border: 15px solid #e6b89c;
+        color: #4281A4;
+        margin: 10px;
+        padding: 20px;
+        background-color: white;
+        font-size: 0.7em;
+    }
+}
