@@ -17,3 +17,5 @@ fields:
     maxSize: 64
   label: harry et mélanie
   default: "/uploads/galerie-mariage1-1.jpg"
+pages:
+- nouvelles photos/nouveau mariage.md
