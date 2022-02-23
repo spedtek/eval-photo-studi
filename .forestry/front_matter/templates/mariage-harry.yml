@@ -1,4 +1,19 @@
 ---
 label: mariage harry
 hide_body: false
-fields: []
+fields:
+- name: mariage_de_harry_et_melanie
+  type: text
+  config:
+    required: false
+  label: Mariage de harry et mélanie
+  description: "<strong>Lorem Ipsum</strong> is simply dummy text of the printing
+    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+    ever since the 1500s, when an unknown printer took a galley of type and scrambled
+    it to make a type specimen book."
+- name: harry_et_melanie
+  type: file
+  config:
+    maxSize: 64
+  label: harry et mélanie
+  default: "/uploads/galerie-mariage1-1.jpg"
